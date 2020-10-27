@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#000"
+            android:textSize="26sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LoginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Email ou telefone"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+        <EditText
+            android:id="@+id/login_Input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:text="Login"
+
+            />
+
+        <TextView
+            android:id="@+id/senha_Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Senha"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+        <EditText
+            android:id="@+id/senhaInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:text="Senha"
+
+            />
+        <TextView
+            android:id="@+id/RecoverpassTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="190dp"
+            android:text="Esqueceu a Senha ?"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+
+
+        <Button
+            android:id="@+id/loginBotao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Entrar"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:onClick="Login"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

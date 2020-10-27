@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaActivity"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista jogos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_topo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:hint="Nome do filme" android:id="@+id/et_nome"
+        app:layout_constraintTop_toBottomOf="@id/tv_topo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:hint="Custo de Produção" android:id="@+id/et_atk"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_nome"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:hint="Ano de Produção" android:id="@+id/et_hp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_atk"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar filme"
+        app:layout_constraintTop_toBottomOf="@id/et_hp"
+        android:id="@+id/bt_cadastrar"
+        android:onClick="cadastrarFilme"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_cadastrar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_conteudo"
+            android:orientation="vertical">
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_grande"/>
+-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>
